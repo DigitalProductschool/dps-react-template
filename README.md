@@ -1,1 +1,1 @@
-# dps-react-template
+DPS REACT TEMPLATE
