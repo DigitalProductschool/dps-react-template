@@ -32,9 +32,9 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
           - name: PORT
-            value: "8000"
+            value: "3000"
         ports:
-          - containerPort: 8000
+          - containerPort: 3000
         resources:
           requests:
             memory: "512M"
