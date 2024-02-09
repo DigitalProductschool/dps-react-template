@@ -30,16 +30,16 @@ jobs:
       - name: Extract env vars
         id: env_vars
         run: |
-          if [ -f "env_vars_file.txt" ]; then
+          if [ -f "env_var_file.txt" ]; then
 
           # Read values from the file
-          env_var=$(grep "env:" env_vars_file.txt | awk '{print $2}')
+          env_var=$(grep "env:" env_var_file.txt | awk '{print $2}')
         
           # Print the extracted values
           echo "environment=$env_var" >> "$GITHUB_ENV"
         
           else
-            echo "File env_vars_file.txt does not exist."
+            echo "File env_var_file.txt does not exist."
           fi
 
       - name: Set up QEMU
