@@ -78,7 +78,7 @@ jobs:
       - name: Update Helm
         run: |
           chmod +x deployment/scripts/update-helm-values.sh
-          ./deployment/scripts/update-helm-values.sh ${{ env.VERSION }} ${{ env.IMAGE }}  "" ${{ env.ENV }} "" "" ${{ env.CONTEXT }} ${{ github.event.repository.name }}
+          ./deployment/scripts/update-helm-values.sh ${{ env.VERSION }} ${{ env.IMAGE }}  "PROVIDER" ${{ env.ENV }} "SIZE" "ACCOUNT" ${{ env.CONTEXT }} ${{ github.event.repository.name }}
 
       - name: Delete env vars file
         run: rm -rf env_vars_file.txt
