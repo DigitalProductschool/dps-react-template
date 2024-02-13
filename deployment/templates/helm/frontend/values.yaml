@@ -1,11 +1,13 @@
 replicas: 2
+
 image:
-  repository: "ghcr.io/digitalproductschool/test-backend/frontend"
-  tag: "1.0.3"
+  repository: ""
+  tag: ""
   pullPolicy: Always
-imagePullSecrets:
+imagePullSecrets: 
   - name: ghcr-credentials
-podSecurityContext:
+
+podSecurityContext: 
   runAsNonRoot: true
   runAsUser: 100
   runAsGroup: 102
@@ -13,12 +15,14 @@ podSecurityContext:
   fsGroupChangePolicy: "OnRootMismatch"
   seccompProfile:
     type: "RuntimeDefault"
-securityContext:
+
+securityContext: 
   capabilities:
     drop: ["ALL"]
   allowPrivilegeEscalation: false
+
 ingress:
-  host: "dev.test-backend.dpschool.app"
+  host: ""
   className: nginx
 tls:
   enabled: true
