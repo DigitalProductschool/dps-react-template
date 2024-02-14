@@ -21,6 +21,7 @@
 		"noFallthroughCasesInSwitch": true
 
 		// Comment out next two lines if you want to work with js
+		// "allowJs": true,
 		// "noImplicitAny": false,
 		// "checkJs": false
 	},
