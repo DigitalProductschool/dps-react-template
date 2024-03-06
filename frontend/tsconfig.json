@@ -20,9 +20,10 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 
-		// Comment out next two lines if you want to work with js
+		// Comment out lines below if you want to disable type checking
 		// "noImplicitAny": false,
-		// "checkJs": false
+		// "checkJs": false,
+		// "strictNullChecks": false,
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]
