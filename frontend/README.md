@@ -3,7 +3,7 @@
 To get this running, along with the provided Hugging Face example, you need to:
 
 -   Duplicate `.env.template` file, and rename the duplicate to `.env`.
--   Enter your Huggig Face API key in the forseene place in the `.env` file
+-   Enter your Huggig Face API key in the foreseen place in the `.env` file
 -   in your terminal run: `npm install && npm run dev`
 
 It should be running now 🫣
