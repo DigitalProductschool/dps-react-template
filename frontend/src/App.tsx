@@ -45,7 +45,7 @@ function App() {
 					<input
 						ref={inputRef}
 						type="text"
-						placeholder="What do you want to send to Huggingface?"
+						placeholder="Tell me What do you want to send to Huggingface?"
 						required
 						autoFocus
 						disabled={isLoading}
